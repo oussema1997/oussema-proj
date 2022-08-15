@@ -91,6 +91,7 @@
     </dependencies>
 
     <build>
+             
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -106,5 +107,15 @@
             </plugin>
         </plugins>
     </build>
+         <distributionManagement>
+        <repository>
+            <id>release</id>
+            <url>http://localhost:9981/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <url>http://localhost:9981/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>
